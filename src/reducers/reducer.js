@@ -1,13 +1,13 @@
 import {
   READ_EMPLOYES_REQUEST,
   READ_EMPLOYES_FAILURE,
-  READ_EMPLOYES_SUCCESS
+  READ_EMPLOYES_SUCCESS,
 } from "../types/actionsTypes.js";
 
 const initialState = {
   employes: [],
   isLoading: false,
-  isError: false
+  isError: false,
 };
 
 const infoEmployes = (state = initialState, action) => {

@@ -1,7 +1,7 @@
 import React from "react";
 import Employe from "../Employe";
 
-const ListEmployes = ({ employes=[], isLoading, isError }) => {
+const ListEmployes = ({ employes = [], isLoading, isError }) => {
   if (!employes.length && !isLoading && !isError)
     return <p>Список робітників пустий</p>;
   else
