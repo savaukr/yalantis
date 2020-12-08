@@ -23,6 +23,10 @@
     width: 40%;
     background-color: rgb(240,240,240);
 }
+.list__right__birthday {
+    display: flex;
+    flex-wrap: wrap;
+}
 ul {
     list-style: none;
 }
@@ -34,7 +38,7 @@ ul {
         
     }
 }
-@media screen  and (max-width:624px) {
+@media screen  and (max-width:648px) {
     .letter {
         width: 100%;
         min-height: 80px;

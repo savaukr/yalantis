@@ -1,0 +1,23 @@
+.list__right {
+    
+}
+.month_wrapper {
+    width:50%;
+    padding: 1rem 0;
+}
+.employes {
+    text-align: left;
+    padding-left: 1rem;
+}
+.month_name {
+    font-size: 1.5rem;
+}
+.list__right__birthday {
+    position: sticky;
+    top: 0px;
+}
+@media screen  and (max-width:648px) {
+    .month_wrapper {
+        width:100%;
+    }
+}
