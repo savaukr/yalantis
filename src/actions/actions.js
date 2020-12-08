@@ -17,16 +17,12 @@ export const readJsonActionSuccess = (data) => ({
   payload: data,
 });
 
-export const readJson = (dataLocalStorage=[]) => (dispatch) => {
+export const readJson = (dataLocalStorage) => (dispatch) => {
   dispatch(readJsonActionRequest());
-  //console.log(JSON.parse(localStorage.getItem("employes")));
-/*
+
   if (dataLocalStorage.length !== 0) {
-      dispatch(
-        readJsonActionSuccess(JSON.parse(localStorage.getItem("employes")))
-      );
-    }
-  else*/
+    dispatch(readJsonActionSuccess(dataLocalStorage));
+  } else
     axios
       .get(`https://yalantis-react-school-api.yalantis.com/api/task0/users`)
       .then((response) =>

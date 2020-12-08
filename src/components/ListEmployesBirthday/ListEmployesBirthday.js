@@ -33,18 +33,15 @@ function ListEmployesBirthday({ employes = [] }) {
     return list;
   };
 
-  //console.log( checkedEmployes);
-
   const listMonthes = arrMonthes.map((month, ind) => {
-   // console.log(getEmployesInMonth(checkedEmployes, ind));
     let names;
     if (getEmployesInMonth(checkedEmployes, ind).length > 0) {
       names = getEmployesInMonth(checkedEmployes, ind).map((item) => (
         <li key={item.id + item.name} className="employes">
-          {item.firstName+ '  '+ item.lastName}
+          {item.firstName + "  " + item.lastName}
         </li>
       ));
-    } else names =  ["no  employees selected"];
+    } else names = ["no  employees selected"];
     return (
       <div key={month} className="month_wrapper">
         <div className="month_name">{month}</div>
