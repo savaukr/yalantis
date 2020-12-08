@@ -1,0 +1,43 @@
+.list__container {
+    display: flex;
+}
+.list__left {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap ;
+
+}
+.list__header {
+    width:100%;
+    font-size: 2rem;
+    padding: 1.5rem;
+}
+.letter {
+    width: 30%;
+    min-height: 80px;
+    padding-bottom: 1rem;;
+    
+}
+
+.list__right {
+    width: 40%;
+    background-color: rgb(240,240,240);
+}
+ul {
+    list-style: none;
+}
+
+@media screen and (max-width:1024px) {
+    .letter {
+        width: 50%;
+        min-height: 80px;
+        
+    }
+}
+@media screen  and (max-width:624px) {
+    .letter {
+        width: 100%;
+        min-height: 80px;
+        
+    }
+}

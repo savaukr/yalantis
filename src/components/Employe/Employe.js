@@ -1,11 +1,12 @@
 import React from "react";
 
-const Employe = ({ employe }) => {
+const Employe = ({employes,  employe, changeChecked }) => {
   return (
-    <li>
-      <span>{employe.firstName}</span>
-      <span>{employe.lastName}</span>
-    </li>
+    <p onChange = {changeChecked(employes, employe.id)}> 
+      <label htmlFor={employe.id}>{employe.firstName +'  ' + employe.lastName }
+        <input type="checkbox" id={employe.id} name={employe.lastName} />
+      </label>        
+    </p>   
   );
 };
 export default Employe;
